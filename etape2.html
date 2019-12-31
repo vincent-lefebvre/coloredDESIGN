@@ -6,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Colored Design - &Eacute;tape 2</title>
     <style>
-        body{
-            width: 500px;
-            height: 500px;
-            padding: 80px;
+        body {
+            margin: 10px 0;
+            padding: 0;
+            /* text-align: center; à cause d'IE */
+            text-align: center;
+            font-size: 0.8em;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            background-color: #dea;
         }
-        nav{
-            margin: 50px;
+
+
+        #conteneur {
+            margin: 0 auto;
+            width: 770px;
+            background-color: #fff;
+            border: 2px solid #ab4;
+            text-align: left;
         }
-        main{
-            width: 500px;
-            height: 500px;
+
+        header h1 {
+            height: 258px;
+            background: url(img/apple.jpg) no-repeat left bottom;
+
+            /* background-image: url(img/apple.jpg);
+            background-repeat: no-repeat;
+            background-position: left bottom; */
         }
     </style>
 
 </head>
 <body>
+    <!-- cette division contient l'ensemble de la page on peut parfois l'appeler "wrapper" "contenu" ou parfois div id="main" -->
     <div id="conteneur">
         <!-- en-tête de la page de body -->
         <header>
@@ -29,14 +45,15 @@
             <h1><a href="#">Colored Design</a></h1>
             <nav>
                 <ul>
-                    <li><a href="etape1.html" title="Etape 1">Etape n° 1</a></li>
-                    <li><a href="etape2.html" title="Etape 2">Etape n° 2</a></li>
-                    <li><a href="#" title="Etape 3">Etape n° 3</a></li>
+                    <li><a href="etape1.html" title="etape1">Etape n° 1</a></li>
+                    <li><a href="etape2.html" title="etape2">Etape n° 2</a></li>
+                    <li><a href="etape3.html" title="etape3">Etape n° 3</a></li>
                     <li><a href="#" title="Etape 4">Etape n° 4</a></li>
                     <li><a href="#" title="Etape 5">Etape n° 5</a></li>
                 </ul>
             </nav>
         </header>
+
         <!-- contenu principal -->
         <main>
             <h2>Un titre /// étape2</h2>
@@ -45,6 +62,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat unde velit dolor perspiciatis enim sunt eveniet odit repellendus. Libero error perferendis esse porro quos. Delectus perspiciatis placeat beatae expedita maxime!</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum delectus accusantium a aspernatur repellendus doloribus maiores repellat, velit, vel et, quisquam similique voluptas quos explicabo earum ipsa totam assumenda vero!</p>
         </main>
+
         <footer>
             <p>Réalisation des codes HTML\CSS, du tutoriel et du design par omega</p>
         </footer>
