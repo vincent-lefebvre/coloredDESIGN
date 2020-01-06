@@ -1,1 +1,110 @@
 /* feuille de style */
+        body {
+            margin: 10px 0;
+            padding: 0;
+            /* text-align: center; à cause d'IE */
+            text-align: center;
+            font-size: 0.8em;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            background-color: #dea;
+        }
+
+        #conteneur {
+            margin: 0 auto;
+            width: 770px;
+            background-color: #fff;
+            border: 2px solid #ab4;
+            text-align: left;
+        }
+
+        header h1 {
+            /* hauteur du h1 dans le header qui permet de mettre l'image en fond, la taille est dictée par la hauteur de l'image */
+            height: 258px;
+            background: url(img/apple.jpg) no-repeat left top;
+        }
+
+        header h1 a{
+            /* on donne des dimensions au lien, chose possible  */
+            width: 400px;
+            height: 70px;
+            display: block;
+            /* dès l'instant ou l'on change d'inline en block il est préférable de mettre des tailles largeur et/ou hauteur à l'élément   */
+            background: url(img/title.gif) no-repeat;
+
+            position: relative;
+            left : 350px;
+            top : 15px;
+            /* pour masquer le texte */
+            text-indent: -5000px;
+        }
+        ul#menu {
+            /* pour enlever les puces */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 35px;
+            background: url(img/bg_menu.gif) repeat-x 0 -25px;
+        }
+
+        ul#menu li {            
+            float: left;
+            text-align: center;
+        }
+
+        ul#menu li a:hover {
+            background: url(../img/bg_menu.gif);
+        }
+
+        
+        ul#menu li a {
+            width: 130px;
+            display: block;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 25px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        main {
+            padding: 0 30px 0 100px;
+            background: url(../img/bg_page.gif) no-repeat left top;
+        }
+
+        main h2 {
+            padding-left: 25px;
+            font-size: 1.4em;
+            color: #9b2;
+            background: url(img/little_apple.gif) no-repeat;
+            border-bottom: 1px solid #9b2;
+        }
+
+        main h3 {
+            margin-left: 15px;
+            padding-left: 5px;
+            border-bottom: 1px solid #9b2;
+            border-left: 3px solid #9b2;
+            color: #9b2;
+        }
+
+        main p {
+            line-height: 1.7em;
+            text-align: justify;
+        }
+
+        main a {
+            color: #8a0;
+        }
+
+        main a:hover {
+            color: red;
+        }
+
+        footer p {
+            margin: 0;
+            padding-right: 30px;
+            color: #8a0;
+            line-height: 30px;
+            text-align: right;
+        }
